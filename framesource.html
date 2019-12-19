@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Result System | Medal Tally</title>
+
+    <link rel="icon" href="/RS2019/Content/favicon.ico"/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- Primary vendor style -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="/RS2019/bundles/animate/css?v=TS_TayB91ibtNEIEuFyRTY4MKruiSouKnZGvXM9wZzc1" rel="stylesheet"/>
+
+    <link href="/RS2019/bundles/bootstrap/css?v=0z6re1BOO4Jcpt6H9Mm9DKzW38WI3G4p-6nidn6fJLM1" rel="stylesheet"/>
+
+    <link href="/RS2019/bundles/peicon7stroke/css?v=Xt7dqD5fI6gBI3RBoPWSt1nfcmgT1f4bGcYcuT_dBno1" rel="stylesheet"/>
+
+    <link href="/RS2019/bundles/toastr/css?v=cw4Yi9JTDDYFnRUK1zSmP65PjKUUdW_ATnn-gqa8a6M1" rel="stylesheet"/>
+
+
+    <!-- Add local styles, mostly for plugins css file -->
+
+    <!-- Primary HOMER style -->
+    <link href="/RS2019/bundles/homer/css?v=eMjMeQ13wITad0rlPGHUGrSFZ7DgN9DrPhqcsSUqIsw1" rel="stylesheet"/>
+
+
+    <link href="/RS2019/Styles/custom.css" rel="stylesheet"/>
+    <link href="/RS2019/Styles/dd.css" rel="stylesheet"/>
+</head>
+<body class="MedalTally" style="background-image: url(/RS2019/Content/img/diagmonds-light-2.png);">
+
+<!-- Render Body -->
+
+<div class="p-sm">
+    
+    <table class="table table-striped borders">
+        <thead class="thead_sg font-uppercase">
+        <tr>
+            <th class="p-xxs">
+                <small>Contingent</small>
+            </th>
+            <th class="text-right p-xxs">
+                <small>Gold</small>
+            </th>
+            <th class="text-right p-xxs">
+                <small>Silver</small>
+            </th>
+            <th class="text-right p-xxs">
+                <small>Bronze</small>
+            </th>
+            <th class="text-right p-xxs">
+                <small>Total</small>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="p-xxs text-nowrap">
+                    <img src="/RS2019/content/flags/PHI.gif" width="24" alt="PHI" class="borders"/>
+                    <small>PHILIPPINES</small>                    
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>149</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>117</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>121</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>387</small>
+                </td>
+            </tr>
+            <tr>
+                <td class="p-xxs text-nowrap">
+                    <img src="/RS2019/content/flags/VIE.gif" width="24" alt="VIE" class="borders"/>
+                    <small>VIETNAM</small>                    
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>98</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>85</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>105</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>288</small>
+                </td>
+            </tr>
+            <tr>
+                <td class="p-xxs text-nowrap">
+                    <img src="/RS2019/content/flags/THA.gif" width="24" alt="THA" class="borders"/>
+                    <small>THAILAND</small>                    
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>92</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>103</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>123</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>318</small>
+                </td>
+            </tr>
+            <tr>
+                <td class="p-xxs text-nowrap">
+                    <img src="/RS2019/content/flags/INA.gif" width="24" alt="INA" class="borders"/>
+                    <small>INDONESIA</small>                    
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>72</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>84</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>111</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>267</small>
+                </td>
+            </tr>
+            <tr>
+                <td class="p-xxs text-nowrap">
+                    <img src="/RS2019/content/flags/MAS.gif" width="24" alt="MAS" class="borders"/>
+                    <small>MALAYSIA</small>                    
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>55</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>58</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>71</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>184</small>
+                </td>
+            </tr>
+            <tr>
+                <td class="p-xxs text-nowrap">
+                    <img src="/RS2019/content/flags/SGP.gif" width="24" alt="SGP" class="borders"/>
+                    <small>SINGAPORE</small>                    
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>53</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>46</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>68</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>167</small>
+                </td>
+            </tr>
+            <tr>
+                <td class="p-xxs text-nowrap">
+                    <img src="/RS2019/content/flags/MYA.gif" width="24" alt="MYA" class="borders"/>
+                    <small>MYANMAR</small>                    
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>4</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>18</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>51</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>73</small>
+                </td>
+            </tr>
+            <tr>
+                <td class="p-xxs text-nowrap">
+                    <img src="/RS2019/content/flags/CAM.gif" width="24" alt="CAM" class="borders"/>
+                    <small>CAMBODIA</small>                    
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>4</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>6</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>36</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>46</small>
+                </td>
+            </tr>
+            <tr>
+                <td class="p-xxs text-nowrap">
+                    <img src="/RS2019/content/flags/BRU.gif" width="24" alt="BRU" class="borders"/>
+                    <small>BRUNEI DARUSSALAM</small>                    
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>2</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>5</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>6</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>13</small>
+                </td>
+            </tr>
+            <tr>
+                <td class="p-xxs text-nowrap">
+                    <img src="/RS2019/content/flags/LAO.gif" width="24" alt="LAO" class="borders"/>
+                    <small>LAO PDR</small>                    
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>1</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>5</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>29</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>35</small>
+                </td>
+            </tr>
+            <tr>
+                <td class="p-xxs text-nowrap">
+                    <img src="/RS2019/content/flags/TLS.gif" width="24" alt="TLS" class="borders"/>
+                    <small>TIMOR-LESTE</small>                    
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>0</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>1</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>5</small>
+                </td>
+                <td class="p-xxs" align="right">
+                    <small>6</small>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<a href="#" id="back-button" title="Back" style="z-index: 99999 !important;">
+    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+</a>
+
+<a href="#" id="back-to-top" title="Back to top" style="z-index: 99999 !important;">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+</a>
+
+<a href="#" id="back-button-2" title="Back" style="z-index: 9999999 !important;" onclick="history.back();">
+    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+</a>
+
+<!-- Section for main scripts render -->
+<script src="/RS2019/bundles/jquery/js?v=LCTUWYjF9I-Sw3l0P8Zn6_b6478OuizeBkjnoe30Tcc1"></script>
+
+<script src="/RS2019/bundles/bootstrap/js?v=lescQEuG5u4jd-GcVDBcbpUOSyTDIg0Kk9zHDX55GCw1"></script>
+
+<script src="/RS2019/bundles/homer/js?v=cykWCssZtpHvP5Ad96lpQf6C4D6W-lLAVHuLMAvfC9g1"></script>
+
+<script src="/RS2019/bundles/toastr/js?v=TD0A3dKJeXIO_A-cX96xmyysMOiGlN6Smsn1zv1s-F81"></script>
+
+
+
+
+
+<script src="/RS2019/Scripts/jquery.dd.min.js"></script>
+<script src="/RS2019/Scripts/application.js"></script>
+
+<!-- Handler for local scripts -->
+
+</body>
+</html>
